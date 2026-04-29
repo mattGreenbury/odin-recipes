@@ -129,3 +129,153 @@ body {
 .recipe-card:hover .recipe-cta {
     color: #f4b266;
 }
+
+/* === Back Link === */
+.nav-back {
+    color: #e2efde;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.nav-back:hover {
+    border-color: #e2efde;
+}
+
+/* === Recipe Page === */
+body.recipe-page {
+    background-color: #afd0bf;
+}
+
+.recipe {
+    max-width: 720px;
+    margin: 48px auto;
+    padding: 48px 56px 64px;
+    background-color: #e2efde;
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.12),
+        0 1px 6px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #9b7e46;
+}
+
+.recipe > h1 {
+    font-size: 2.4rem;
+    color: #2c2c2c;
+    margin-top: 40px;
+    margin-bottom: 4px;
+    letter-spacing: 0.01em;
+}
+
+.recipe > h2 {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+    color: #808f87;
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+}
+
+.recipe .subtext {
+    border-left: 3px solid #9b7e46;
+    padding-left: 16px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.recipe .subtext p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #2c2c2c;
+    font-style: italic;
+}
+
+.recipe .ingredients,
+.recipe .method {
+    margin-bottom: 40px;
+}
+
+.recipe .ingredients h2,
+.recipe .method h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #9b7e46;
+    border-bottom: 1px solid #afd0bf;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.recipe .ingredients ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.recipe .ingredients ul li {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #2c2c2c;
+    padding: 8px 12px;
+    background-color: #e2efde;
+    border-left: 3px solid #afd0bf;
+}
+
+.recipe .ingredients ul li:nth-child(even) {
+    background-color: #afd0bf;
+}
+
+.recipe .method ol {
+    padding-left: 0;
+    list-style: none;
+    counter-reset: method-counter;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.recipe .method ol li {
+    counter-increment: method-counter;
+    display: flex;
+    gap: 16px;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #2c2c2c;
+}
+
+.recipe .method ol li::before {
+    content: counter(method-counter);
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #9b7e46;
+    min-width: 28px;
+    padding-top: 1px;
+}
+
+.image-card {
+    background-color: #e2efde;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 12px 20px 12px;
+    border: 1px solid #afd0bf;
+    border-top: 4px solid #9b7e46;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    gap: 12px;
+    margin: 0 auto;
+}
+
+.image-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
