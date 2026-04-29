@@ -2,15 +2,72 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./styles.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Odin Recipes</title>
     </head>
     <body>
-        <h1>Odin Recipes</h1>
-        <ul>
-            <li><a href="./recipes/custard-square.html">Custard Squares</a></li>
-            <li><a href="./recipes/egg-fried-rice.html">Egg Fried Rice</a></li>
-            <li><a href="./recipes/rice-pudding.html">Rice Pudding</a></li>
-        </ul>
+        <div class="header">
+            <div class="top-bar">
+                <div class="title">
+                    <h1>Odin Recipes</h1>
+                </div>
+                <div class="nav">
+                    <a href="#" class="nav-cta">My Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <main class="recipe-list">
+            <a href="./recipes/custard-square.html" class="recipe-card">
+                <img
+                    src="https://storage.ghost.io/c/14/e5/14e54dda-2672-4423-a0f0-632d047aeded/content/images/size/w1140/2023/06/DSC_6307.JPG"
+                    alt="Custard Squares"
+                    style="object-position: center 30%"
+                />
+                <div class="recipe-info">
+                    <h2>Custard Squares</h2>
+                    <p>
+                        A creamy vanilla custard sandwiched between two layers
+                        of puff pastry, topped with icing. So easy it's fool
+                        proof!
+                    </p>
+                    <span class="recipe-cta">View Recipe &rarr;</span>
+                </div>
+            </a>
+
+            <a href="./recipes/egg-fried-rice.html" class="recipe-card">
+                <img
+                    src="https://imhungryforthat.com/wp-content/uploads/2022/01/fried-rice-recipe.jpg.webp"
+                    alt="Egg Fried Rice"
+                    style="object-position: center 70%"
+                />
+                <div class="recipe-info">
+                    <h2>Egg Fried Rice</h2>
+                    <p>
+                        As seen cooked by Uncle Roger himself. Quick, easy, one
+                        pan meal, and possibly the best fried rice you'll ever
+                        make.
+                    </p>
+                    <span class="recipe-cta">View Recipe &rarr;</span>
+                </div>
+            </a>
+
+            <a href="./recipes/rice-pudding.html" class="recipe-card">
+                <img
+                    src="https://easysweetmeal.b-cdn.net/images/old-fashioned-rice-pudding.jpg"
+                    alt="Rice Pudding"
+                    style="object-position: center 20%"
+                />
+                <div class="recipe-info">
+                    <h2>Rice Pudding</h2>
+                    <p>
+                        A warm, comforting classic. Creamy rice slow-cooked in
+                        sweet milk simple ingredients.
+                    </p>
+                    <span class="recipe-cta">View Recipe &rarr;</span>
+                </div>
+            </a>
+        </main>
     </body>
 </html>
